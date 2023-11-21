@@ -1,0 +1,85 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #ffbe7b;
+}
+.box{
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 2rem 1.5rem;
+    position: relative;
+}
+.box img{
+    width: auto;
+}
+.qr-icon{
+    position: absolute;
+    content: "";
+    height: 50px;
+    top: -70px;
+    padding: 1rem;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #fff;
+    border-radius: 8px;
+}
+.heading{
+    display: flex;
+    font-size: 1.1rem;
+    font-weight: 600;
+    font-family: 'Courier New', Courier, monospace;
+    color: #505050;
+    padding: .5rem 0;
+}
+.input{
+    display: block;
+    font-size: 1.15rem;
+    padding: .6rem;
+    margin-bottom: .7rem;
+    border: none;
+    border-radius: 8px;
+    background-color: #0001;
+
+}
+.input:focus-visible{
+    outline: 5px solid #d65b005c;
+}
+.btn{
+    display: block;
+    font-size: 1.15rem;
+    padding: .6rem 1rem;
+    margin-bottom: .7rem;
+    border: none;
+    border-radius: 8px;
+    color: #fff;
+    background-color: teal;
+    cursor: pointer;
+}
+.btn:active{
+    transform: scalle(.9);
+    transition: .3s;
+}
+.box-image{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    display: none;
+}
+.box-image.show{
+    border-radius: 8px;
+    border: 3px solid #d4d4d4;
+    padding: 1rem;
+    height: auto;
+    width: auto;
+    display: block;
+}
+.qr-image{
+    width: 100%;
+    height: 100%;
+}
